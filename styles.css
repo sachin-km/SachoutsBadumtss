@@ -80,6 +80,16 @@ footer {
   background-color: white;
 }
 
-.container{
-  display : inline
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .drum {
+    flex: 0 0 calc(50% - 20px); /* Display two items in a row with some margin */
+  }
 }
